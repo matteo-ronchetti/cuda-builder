@@ -48,5 +48,5 @@ RUN /opt/conda/bin/conda create -n py36cu102 python=3.6 && \
 ##    /opt/conda/bin/conda clean --all
 
     
-COPY script.sh script.sh
-CMD ["bash", "script.sh"]
+#COPY script.sh script.sh
+#CMD ["bash", "script.sh"]
