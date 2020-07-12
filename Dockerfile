@@ -1,20 +1,20 @@
 FROM pytorch/conda-cuda
 
-RUN /opt/conda/bin/conda create -n py37cu101 python=3.7 && \
-    /opt/conda/bin/conda install -n py37cu101 cudatoolkit=10.1 -c pytorch && \
-    /opt/conda/bin/conda clean --all
+RUN /opt/conda/bin/conda create -n py37cu101 python=3.7
+#     /opt/conda/bin/conda install -n py37cu101 cudatoolkit=10.1 -c pytorch && \
+#     /opt/conda/bin/conda clean --all
 
-RUN /opt/conda/bin/conda create -n py36cu101 python=3.6 && \
-    /opt/conda/bin/conda install -n py36cu101 cudatoolkit=10.1 -c pytorch && \
-    /opt/conda/bin/conda clean --all
+RUN /opt/conda/bin/conda create -n py36cu101 python=3.6
+#     /opt/conda/bin/conda install -n py36cu101 cudatoolkit=10.1 -c pytorch && \
+#     /opt/conda/bin/conda clean --all
 
-RUN /opt/conda/bin/conda create -n py37cu102 python=3.7 && \
-    /opt/conda/bin/conda install -n py37cu102 cudatoolkit=10.2 -c pytorch && \
-    /opt/conda/bin/conda clean --all
+RUN /opt/conda/bin/conda create -n py37cu102 python=3.7
+#     /opt/conda/bin/conda install -n py37cu102 cudatoolkit=10.2 -c pytorch && \
+#     /opt/conda/bin/conda clean --all
 
-RUN /opt/conda/bin/conda create -n py36cu102 python=3.6 && \
-    /opt/conda/bin/conda install -n py36cu102 cudatoolkit=10.2 -c pytorch && \
-    /opt/conda/bin/conda clean --all
+RUN /opt/conda/bin/conda create -n py36cu102 python=3.6
+#     /opt/conda/bin/conda install -n py36cu102 cudatoolkit=10.2 -c pytorch && \
+#     /opt/conda/bin/conda clean --all
 
 
 #RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/*
